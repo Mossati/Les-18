@@ -1,0 +1,98 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #ebe4dd;
+  font-family: sans-serif;
+  min-height: 100vh;
+}
+
+header{
+  background-image: url("afbeeldingen/velsen-noord.jpg");
+  background-size: auto;
+  max-width: 100%;
+  height: 200px;
+  text-align: center;
+  padding: 12px;
+}
+header h1{
+  font-family: cursive;
+  color: white;
+}
+
+.row{
+  max-width: 100%;
+}
+
+[class*="col-"]{
+  float: left;
+  padding: 5px;
+}
+
+.col-1{
+  width: 16.66%;
+  text-align: center;
+}
+
+.col-2{
+  width: 75%;
+  background-color: #d1c2b2;
+}
+
+.col-1 p{
+  font-weight: bold;
+}
+
+ul{
+  list-style-type: none;
+  text-align: left;
+}
+
+article{
+  max-width: 100%;
+  height: 200px;
+  margin-bottom: 5px;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+article p{
+  display: inline-block;
+  width: 50%;
+}
+
+article img{
+  width: 50%;
+  height: auto;
+  float: right;
+}
+
+li{
+  background-color: #c79f75;
+  padding: 2px;
+  margin-bottom: 5px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+footer{
+  clear: left;
+  background-color: #6e5a44;
+  height: 120px;
+  margin-top: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 768px){
+  .col-1{
+    width: 100%;
+  }
+
+  .col-2{
+    width: 100%;
+  }
+}
